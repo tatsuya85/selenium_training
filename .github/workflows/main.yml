@@ -26,5 +26,5 @@ jobs:
           pip install -r selenium/requirements.txt
       - 
         name: Test Selenium
-        run: pytest test_GoogleSearch.py
+        run: pytest --html=reports.html test_GoogleSearch.py
 
