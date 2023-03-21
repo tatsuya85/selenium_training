@@ -15,7 +15,7 @@ def test_GoogleSearch(area,expect,fileName):
 
     #GoogleのTOPページを開く 
     driver.get('https://google.co.jp/')
-    time.sleep(5)
+    time.sleep(3)
     driver.maximize_window()
 
     searchElement = driver.find_element("name", "q")
