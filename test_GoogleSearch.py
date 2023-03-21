@@ -11,7 +11,7 @@ import os
 
 
 def test_GoogleSearch(area,expect,fileName):    
-    driver = webdriver.Chrome('ChromeDriver.exe')
+    driver = webdriver.Chrome()
 
     #GoogleのTOPページを開く 
     driver.get('https://google.co.jp/')
