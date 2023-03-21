@@ -10,9 +10,7 @@ import os
                         ("沖縄県","沖縄県の天気予報","screenshot2.png")])
 
 
-def test_GoogleSearch(area,expect,fileName):
-    FILENAME = os.path.join(os.path.dirname(os.path.abspath(__file__)), "image/screen.png")
-    
+def test_GoogleSearch(area,expect,fileName):    
     driver = webdriver.Chrome('ChromeDriver.exe')
 
     #GoogleのTOPページを開く 
