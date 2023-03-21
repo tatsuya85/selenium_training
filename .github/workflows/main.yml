@@ -13,6 +13,12 @@ jobs:
         with:
           python-version: '3.8'
           architecture: 'x64'
+      - 
+        uses: actions/upload-artifact@v3
+        if: always()
+        with:
+          name: screenshots
+          path: screenshots/
       -  
         name: Install Package
         run: |
@@ -21,9 +27,4 @@ jobs:
       - 
         name: Test Selenium
         run: pytest test_GoogleSearch.py
-      - 
-        uses: actions/upload-artifact@v3
-        if: always()
-        with:
-          name: screenshots
-          path: screenshots/
+
