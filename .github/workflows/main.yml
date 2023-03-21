@@ -14,6 +14,6 @@ jobs:
           python-version: '3.8'
           architecture: 'x64'
       - run: |
-          pip install get-chrome-driver --upgrade
-          pip install -r selenium/requirements.txt
+          #pip install get-chrome-driver --upgrade
+          #pip install -r selenium/requirements.txt
           python test_GoogleSearch.py
