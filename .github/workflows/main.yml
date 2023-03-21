@@ -1,0 +1,19 @@
+#WorkFlow名
+name: Selenium_Training
+
+#トリガー
+on: [push]
+
+jobs: 
+  selenium:
+    runs-on: windows-latest
+    steps: 
+      - uses: actions/checkout@v2
+      - uses: actions/setup-python@v2
+        with:
+          python-version: '3.8'
+          architecture: 'x64'
+      - run: |
+          pip install get-chrome-driver --upgrade
+          pip install -r selenium/requirements.txt
+          python test_GoogleSearch.py
