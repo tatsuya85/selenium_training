@@ -13,5 +13,6 @@ jobs:
         with:
           python-version: '3.8'
           architecture: 'x64'
-      - run: 
-          python test_GoogleSearch.py
+      - run: |
+          pip install -r selenium/requirements.txt
+          python selenium/main.py
